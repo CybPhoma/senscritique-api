@@ -1,0 +1,16 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/code
+    depends_on:
+      - redis
+    environment:
+      - FLASK_APP=app.py
+      - SERVER_NAME=test.senscritique.local
+  redis:
+    image: "redis:alpine"
+
