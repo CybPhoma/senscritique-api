@@ -45,8 +45,9 @@ Vous devrez ajouter une commande pour permettre de supprimer les produits (films
 
 ## **Utilisation**
 ### Endpoints
-GET /product/<id> - Récupère les informations d'un film ou d'une série (titre, note, genre etc) depuis Redis.
-POST /product/<id> - Crée les informations d'un film ou d'une série et les stocke dans Redis.
+`GET /product/<id>` - Récupère les informations d'un film ou d'une série (titre, note, genre etc) depuis Redis.
+
+`POST /product/<id>` - Crée les informations d'un film ou d'une série et les stocke dans Redis.
 
  ### Commande
 Supprime le film ou la série avec l'ID spécifié de Redis:
