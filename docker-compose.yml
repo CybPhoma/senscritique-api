@@ -10,7 +10,7 @@ services:
       - redis
     environment:
       - FLASK_APP=app.py
-      - SERVER_NAME=test.senscritique.local
+      - VIRTUAL_HOST=test.senscritique.localhost
   redis:
     image: "redis:alpine"
 
