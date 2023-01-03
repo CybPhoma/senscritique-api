@@ -30,7 +30,7 @@ Vous devrez ajouter une commande pour permettre de supprimer les produits (films
 - Votre **API doit être accessible en se connectant sur `http://test.senscritique.local`** depuis votre machine hôte.
 - Votre **test-technique doit être hébergé sur Github ou Gitlab** puis être **accessible en public**.
 
-**---**
+---
 
 ## **Prérequis**
 - Python 3
@@ -49,5 +49,5 @@ GET /product/<id> - Récupère les informations d'un film ou d'une série (titre
 POST /product/<id> - Crée les informations d'un film ou d'une série et les stocke dans Redis.
 
  ### Commande
-`docker exec -it <container-ID/name> flask delete-product ID`
-Supprime le film ou la série avec l'ID spécifié de Redis.
+Supprime le film ou la série avec l'ID spécifié de Redis:
+ `docker exec -it <container-ID/name> flask delete-product ID`
