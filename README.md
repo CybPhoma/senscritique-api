@@ -30,24 +30,24 @@ Vous devrez ajouter une commande pour permettre de supprimer les produits (films
 - Votre **API doit être accessible en se connectant sur `http://test.senscritique.local`** depuis votre machine hôte.
 - Votre **test-technique doit être hébergé sur Github ou Gitlab** puis être **accessible en public**.
 
----
+**---**
 
-##Prérequis
+## **Prérequis**
 - Python 3
 - Docker
 - docker-compose
 
-##Installation
+## **Installation**
 1. Clonez ce dépôt git sur votre machine : `git clone https://github.com/CybPhoma/senscritique-api.git`
 2. Placez-vous dans le répertoire du projet : `cd senscritique-api`
 3. Construisez l'image de l'API en exécutant la commande `docker-compose build`
 4. Démarrez la stack Docker en exécutant la commande `docker-compose up`
 
-##Utilisation
-###Endpoints
+## **Utilisation**
+### Endpoints
 GET /product/<id> - Récupère les informations d'un film ou d'une série (titre, note, genre etc) depuis Redis.
 POST /product/<id> - Crée les informations d'un film ou d'une série et les stocke dans Redis.
 
-###Commande
+ ### Commande
 `docker exec -it <container-ID/name> flask delete-product ID`
 Supprime le film ou la série avec l'ID spécifié de Redis.
